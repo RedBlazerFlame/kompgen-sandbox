@@ -1,0 +1,63 @@
+# contains commands to generate all test files
+# lines starting with hash (#) are comments
+# set the language/syntax to "bash" to give this file good highlighting
+
+# 'start' is where counting starts in this script,
+# but the files generated in tests/ still begin at 000.
+start=0
+
+
+# write your testscript here
+
+
+# example:
+
+# you can run an arbitrary command via "!"
+# ! cat sample.in > $
+! cat sample1.in > $
+! cat sample2.in > $
+
+# otherwise, the program is searched through "generators" in details.json
+gen_deterministic 1 0 > $
+gen_deterministic 0 1 > $
+gen_deterministic 0 0 > $
+gen_deterministic 1 -1 > $
+gen_deterministic -1 1 > $
+gen_deterministic -1 0 > $
+gen_deterministic 0 -1 > $
+gen_deterministic -1 -1 > $
+gen_deterministic -1 -1 > $
+# gen_random 10 100000 > $
+
+gen_random 1000 1000 i1 > $
+gen_random 1000 1000 i2 > $
+gen_random 1000 1000 i3 > $
+gen_random 1000 1000 i4 > $
+gen_random 1000 1000 i5 > $
+gen_random 1000 1000 i6 > $
+gen_deterministic 1000 1000 > $
+gen_deterministic -1000 1000 > $
+gen_deterministic -1000 -1000 > $
+gen_deterministic 1000 -1000 > $
+
+gen_random 1000000 1000000 i1 > $
+gen_random 1000000 1000000 i2 > $
+gen_random 1000000 1000000 i3 > $
+gen_random 1000000 1000000 i4 > $
+gen_random 1000000 1000000 i5 > $
+gen_random 1000000 1000000 i6 > $
+gen_deterministic 1000000 1000000 > $
+gen_deterministic -1000000 1000000 > $
+gen_deterministic -1000000 -1000000 > $
+gen_deterministic 1000000 -1000000 > $
+
+gen_random 1000000000000000000 1000000000000000000 i1 > $
+gen_random 1000000000000000000 1000000000000000000 i2 > $
+gen_random 1000000000000000000 1000000000000000000 i3 > $
+gen_random 1000000000000000000 1000000000000000000 i4 > $
+gen_random 1000000000000000000 1000000000000000000 i5 > $
+gen_random 1000000000000000000 1000000000000000000 i6 > $
+gen_deterministic 1000000000000000000 1000000000000000000 > $
+gen_deterministic -1000000000000000000 1000000000000000000 > $
+gen_deterministic -1000000000000000000 -1000000000000000000 > $
+gen_deterministic 1000000000000000000 -1000000000000000000 > $

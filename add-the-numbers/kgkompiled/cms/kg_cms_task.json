@@ -1,0 +1,73 @@
+{
+    "name": "addthenumbers",
+    "title": "Add The Numbers",
+    "time_limit": 2,
+    "task_type": "Batch",
+    "codenames": [
+        "000_subs_1_2_3_4_5_end",
+        "001_subs_3_4_5_end",
+        "002_subs_1_2_3_4_5_end",
+        "003_subs_1_2_3_4_5_end",
+        "004_subs_1_2_3_4_5_end",
+        "005_subs_2_3_4_5_end",
+        "006_subs_2_3_4_5_end",
+        "007_subs_2_3_4_5_end",
+        "008_subs_2_3_4_5_end",
+        "009_subs_2_3_4_5_end",
+        "010_subs_2_3_4_5_end",
+        "011_subs_3_4_5_end",
+        "012_subs_3_4_5_end",
+        "013_subs_3_4_5_end",
+        "014_subs_3_4_5_end",
+        "015_subs_3_4_5_end",
+        "016_subs_3_4_5_end",
+        "017_subs_3_4_5_end",
+        "018_subs_3_4_5_end",
+        "019_subs_3_4_5_end",
+        "020_subs_3_4_5_end",
+        "021_subs_4_5_end",
+        "022_subs_4_5_end",
+        "023_subs_4_5_end",
+        "024_subs_4_5_end",
+        "025_subs_4_5_end",
+        "026_subs_4_5_end",
+        "027_subs_4_5_end",
+        "028_subs_4_5_end",
+        "029_subs_4_5_end",
+        "030_subs_4_5_end",
+        "031_subs_5_end",
+        "032_subs_5_end",
+        "033_subs_5_end",
+        "034_subs_5_end",
+        "035_subs_5_end",
+        "036_subs_5_end",
+        "037_subs_5_end",
+        "038_subs_5_end",
+        "039_subs_5_end",
+        "040_subs_5_end"
+    ],
+    "statement": "statement.pdf",
+    "score_type": "GroupMin",
+    "score_type_parameters": [
+        [
+            10,
+            ".+_subs.*_1_.*"
+        ],
+        [
+            10,
+            ".+_subs.*_2_.*"
+        ],
+        [
+            20,
+            ".+_subs.*_3_.*"
+        ],
+        [
+            30,
+            ".+_subs.*_4_.*"
+        ],
+        [
+            30,
+            ".+_subs.*_5_.*"
+        ]
+    ]
+}

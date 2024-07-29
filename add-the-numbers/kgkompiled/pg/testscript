@@ -1,0 +1,39 @@
+gen_deterministic 1 0 > 3
+gen_deterministic 0 1 > 4
+gen_deterministic 0 0 > 5
+gen_deterministic 1 -1 > 6
+gen_deterministic -1 1 > 7
+gen_deterministic -1 0 > 8
+gen_deterministic 0 -1 > 9
+gen_deterministic -1 -1 > 10
+gen_deterministic -1 -1 > 11
+gen_random 1000 1000 i1 > 12
+gen_random 1000 1000 i2 > 13
+gen_random 1000 1000 i3 > 14
+gen_random 1000 1000 i4 > 15
+gen_random 1000 1000 i5 > 16
+gen_random 1000 1000 i6 > 17
+gen_deterministic 1000 1000 > 18
+gen_deterministic -1000 1000 > 19
+gen_deterministic -1000 -1000 > 20
+gen_deterministic 1000 -1000 > 21
+gen_random 1000000 1000000 i1 > 22
+gen_random 1000000 1000000 i2 > 23
+gen_random 1000000 1000000 i3 > 24
+gen_random 1000000 1000000 i4 > 25
+gen_random 1000000 1000000 i5 > 26
+gen_random 1000000 1000000 i6 > 27
+gen_deterministic 1000000 1000000 > 28
+gen_deterministic -1000000 1000000 > 29
+gen_deterministic -1000000 -1000000 > 30
+gen_deterministic 1000000 -1000000 > 31
+gen_random 1000000000000000000 1000000000000000000 i1 > 32
+gen_random 1000000000000000000 1000000000000000000 i2 > 33
+gen_random 1000000000000000000 1000000000000000000 i3 > 34
+gen_random 1000000000000000000 1000000000000000000 i4 > 35
+gen_random 1000000000000000000 1000000000000000000 i5 > 36
+gen_random 1000000000000000000 1000000000000000000 i6 > 37
+gen_deterministic 1000000000000000000 1000000000000000000 > 38
+gen_deterministic -1000000000000000000 1000000000000000000 > 39
+gen_deterministic -1000000000000000000 -1000000000000000000 > 40
+gen_deterministic 1000000000000000000 -1000000000000000000 > 41
